@@ -1,0 +1,82 @@
+//This is in continuation of first project studentInfo to prepare following task
+
+//1. Take all the data stored in student_info.txt and convert it into tokens 
+
+// 2. Create the array and string using above point (i)
+
+//In context to the name it is assumed that the first and the second last letter is submitted mistakenly so we are supposed to take the correct aphabets 
+// from user so that name correction can be done 
+
+
+// The ASCII CODE convension for each of the value/ character is to be done 
+// now the values are supposed to be sorted in asscending order
+
+
+
+
+package readfile2;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Readfile {
+	// include throws to handle some file handling exceptions
+	public static void main(String[] args)
+		throws IOException {
+            {
+    tokenArray[i] = st.nextToken();
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Please enter your command: ");
+    String input = scanner.nextLine();
+    StringTokenizer st = new StringTokenizer(input, " ");
+    int number = st.countTokens();
+    String tokenArray[] = new String[number];
+    for (int i = 0; i < tokenArray.length; i++) {
+         System.out.println(tokenArray[i]);
+    }
+           
+            
+	
+		// arraylist to store strings
+		List<String> listOfStrings
+			= new ArrayList<>();
+	
+		// load content of file based on specific delimiter
+		Scanner sc = new Scanner(new FileReader("C:\\Users\\dell\\OneDrive\\Documents\\NetBeansProjects\\JavaProgram\\GFG.txt"))
+					;
+		String str;
+	
+		// checking end of file
+		while (sc.hasNext()) {
+			str = sc.next();
+		
+			// adding each string to arraylist
+			listOfStrings.add(str);
+		}
+	
+		// convert any arraylist to array
+		String[] array
+			= listOfStrings.toArray(new String[0]);
+	
+		// print each string in array
+		for (String eachString : array) {
+			System.out.println(eachString);
+		}
+                
+                 {
+		
+		char ch;
+		System.out.print("Enter a character");
+		Scanner r = new Scanner(System.in);
+		ch=r.next().charAt(0);
+		
+		int a =ch;
+		System.out.print("ASCII value of "+ch+" is "+a);
+		
+	}
+	
+	}
+}
